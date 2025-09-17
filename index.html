@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./scripts/index.js" defer></script>
     <title>Delivery Food</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
                 <img src="images\items\user.png" alt="user" />
                 Войти
               </button>
-              <button class="btn btn-outline">
+              <button class="btn btn-outline" id="cart-btn">
                 <img src="images\items\shopping-cart.png" alt="card" />
                 Корзина
               </button>
@@ -55,10 +56,10 @@
               />
             </div>
           </div>
-          <div class="products-wrapper">
+          <div class="products-wrapper" id="rests-container">
             <a class="products-card" href="./goods.html">
               <div class="products-card__image">
-                <img src="./images/rests/pizza-plus.jpg" alt="pizza-plus">
+                <img src="./images/rests/pizza-plus.jpg" alt="pizza-plus" />
               </div>
               <div class="products-card__decription">
                 <div class="products-card__decription-row">
@@ -68,7 +69,7 @@
                 <div class="products-card__decription-row">
                   <div class="products-card__decription-info">
                     <div class="products-card__decription-info--raiting">
-                      <img src="./images/items/star.svg" alt="star">
+                      <img src="./images/items/star.svg" alt="star" />
                       4.5
                     </div>
                     <div class="products-card__decription-info--price">
@@ -83,7 +84,7 @@
             </a>
             <a class="products-card" href="./goods.html">
               <div class="products-card__image">
-                <img src="./images/rests/tanuki.jpg" alt="tanuki">
+                <img src="./images/rests/tanuki.jpg" alt="tanuki" />
               </div>
               <div class="products-card__decription">
                 <div class="products-card__decription-row">
@@ -93,7 +94,7 @@
                 <div class="products-card__decription-row">
                   <div class="products-card__decription-info">
                     <div class="products-card__decription-info--raiting">
-                      <img src="./images/items/star.svg" alt="star">
+                      <img src="./images/items/star.svg" alt="star" />
                       4.5
                     </div>
                     <div class="products-card__decription-info--price">
@@ -108,7 +109,7 @@
             </a>
             <a class="products-card" href="./goods.html">
               <div class="products-card__image">
-                <img src="./images/rests/foodband.jpg" alt="foodband">
+                <img src="./images/rests/foodband.jpg" alt="foodband" />
               </div>
               <div class="products-card__decription">
                 <div class="products-card__decription-row">
@@ -118,7 +119,7 @@
                 <div class="products-card__decription-row">
                   <div class="products-card__decription-info">
                     <div class="products-card__decription-info--raiting">
-                      <img src="./images/items/star.svg" alt="star">
+                      <img src="./images/items/star.svg" alt="star" />
                       4.5
                     </div>
                     <div class="products-card__decription-info--price">
@@ -133,7 +134,7 @@
             </a>
             <a class="products-card" href="./goods.html">
               <div class="products-card__image">
-                <img src="./images/rests/leulos-pizza.jpg" alt="pizza">
+                <img src="./images/rests/leulos-pizza.jpg" alt="pizza" />
               </div>
               <div class="products-card__decription">
                 <div class="products-card__decription-row">
@@ -143,32 +144,7 @@
                 <div class="products-card__decription-row">
                   <div class="products-card__decription-info">
                     <div class="products-card__decription-info--raiting">
-                      <img src="./images/items/star.svg" alt="star">
-                      4.5
-                    </div>
-                    <div class="products-card__decription-info--price">
-                      От 900 ₽
-                    </div>
-                    <div class="products-card__decription-info--group">
-                      Пицца
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-           <a class="products-card" href="./goods.html">
-              <div class="products-card__image">
-                <img src="./images/rests/tochka-eda.jpg" alt="tochka-eda">
-              </div>
-              <div class="products-card__decription">
-                <div class="products-card__decription-row">
-                  <h4 class="products-card__decription--title">Точка еды</h4>
-                  <div class="products-card__decription--badge">50 мин</div>
-                </div>
-                <div class="products-card__decription-row">
-                  <div class="products-card__decription-info">
-                    <div class="products-card__decription-info--raiting">
-                      <img src="./images/items/star.svg" alt="star">
+                      <img src="./images/items/star.svg" alt="star" />
                       4.5
                     </div>
                     <div class="products-card__decription-info--price">
@@ -183,7 +159,32 @@
             </a>
             <a class="products-card" href="./goods.html">
               <div class="products-card__image">
-                <img src="./images/rests/pizzaburger.jpg" alt="pizzaburger">
+                <img src="./images/rests/tochka-eda.jpg" alt="tochka-eda" />
+              </div>
+              <div class="products-card__decription">
+                <div class="products-card__decription-row">
+                  <h4 class="products-card__decription--title">Точка еды</h4>
+                  <div class="products-card__decription--badge">50 мин</div>
+                </div>
+                <div class="products-card__decription-row">
+                  <div class="products-card__decription-info">
+                    <div class="products-card__decription-info--raiting">
+                      <img src="./images/items/star.svg" alt="star" />
+                      4.5
+                    </div>
+                    <div class="products-card__decription-info--price">
+                      От 900 ₽
+                    </div>
+                    <div class="products-card__decription-info--group">
+                      Пицца
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="products-card" href="./goods.html">
+              <div class="products-card__image">
+                <img src="./images/rests/pizzaburger.jpg" alt="pizzaburger" />
               </div>
               <div class="products-card__decription">
                 <div class="products-card__decription-row">
@@ -193,7 +194,7 @@
                 <div class="products-card__decription-row">
                   <div class="products-card__decription-info">
                     <div class="products-card__decription-info--raiting">
-                      <img src="./images/items/star.svg" alt="star">
+                      <img src="./images/items/star.svg" alt="star" />
                       4.5
                     </div>
                     <div class="products-card__decription-info--price">
@@ -215,14 +216,12 @@
           <div class="cart-modal__header">
             <h2 class="cart-modal__header--title">Корзина</h2>
             <span class="cart-modal__header--close">
-              <img src="/images/items/close.svg" alt="close">
+              <img src="/images/items/close.svg" alt="close" />
             </span>
           </div>
           <div class="cart-modal__body">
             <div class="cart-item">
-              <p class="cart-item__title">
-                Ролл угорь стандарт
-              </p>
+              <p class="cart-item__title">Ролл угорь стандарт</p>
               <div class="cart-item__controls">
                 <div class="cart-item__controls--price">250 ₽</div>
                 <button class="btn btn-outline">-</button>
@@ -231,9 +230,7 @@
               </div>
             </div>
             <div class="cart-item">
-              <p class="cart-item__title">
-                Ролл угорь стандарт
-              </p>
+              <p class="cart-item__title">Ролл угорь стандарт</p>
               <div class="cart-item__controls">
                 <div class="cart-item__controls--price">250 ₽</div>
                 <button class="btn btn-outline">-</button>
@@ -242,9 +239,7 @@
               </div>
             </div>
             <div class="cart-item">
-              <p class="cart-item__title">
-                Ролл угорь стандарт
-              </p>
+              <p class="cart-item__title">Ролл угорь стандарт</p>
               <div class="cart-item__controls">
                 <div class="cart-item__controls--price">250 ₽</div>
                 <button class="btn btn-outline">-</button>
@@ -254,16 +249,10 @@
             </div>
           </div>
           <div class="cart-modal__footer">
-            <div class="cart-modal__footer--price">
-              1250 ₽
-            </div>
+            <div class="cart-modal__footer--price">1250 ₽</div>
             <div class="cart-modal__footer--controls">
-              <button class="btn btn-primary">
-                Оформить заказ
-              </button>
-              <button class="btn btn-outline">
-                Отмена
-              </button>
+              <button class="btn btn-primary">Оформить заказ</button>
+              <button class="btn btn-outline">Отмена</button>
             </div>
           </div>
         </div>
